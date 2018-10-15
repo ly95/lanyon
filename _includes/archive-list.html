@@ -1,0 +1,6 @@
+{% for post in page.posts %}
+<p>
+  <small>{{ post.date | date:"%Y年%m月%d日" }}</small>
+  <a class="post-link" href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
+</p>
+{% endfor %}

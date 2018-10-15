@@ -1,22 +1,42 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+title:               "凡人牧白's Blog"
+tagline:             'Personal Blog'
+description:         "凡人牧白's Blog"
+url:                 http://ly95.me
+baseurl:             '/'
+permalink:           /:year-:month-:day/:slug.html
 
-# Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
-baseurl:             ''
-paginate:            5
+paginate:            1
+paginate_path:       /page/:num
 
-# About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Yang Lin
+  url:               http://github.com/ly95
+  email:             linyang95@aol.com
 
-# Custom vars
-version:             1.0.0
+collections:
+  - my_tags
+
+jekyll-archives:
+  enabled:
+    - year
+    - tags
+  layouts:
+    year:            'year-archive'
+    tag:             'tag-archive'
+  permalinks:
+    year:            '/:year/'
+    month:           '/:year/:month/'
+    day:             '/:year/:month/:day/'
+    tag:             '/tag/:name/'
+    category:        '/category/:name/'
+
+exclude:
+  - LICENSE
+  - README.md
+  - tags.py
+  - tags.php
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-archives
