@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 标签
-permalink: tags
+permalink: tags/
 ---
 <div class="tags">
 {% for collections in site.collections %}

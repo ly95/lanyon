@@ -1,8 +1,7 @@
 ---
 layout: page
 title: 关于我
-permalink: about
-profile: true
+permalink: about/
 ---
 
 不爱生活的摄影师不是好的PHPer。

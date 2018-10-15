@@ -33,8 +33,9 @@ jekyll-archives:
 exclude:
   - LICENSE
   - README.md
-  - tags.py
   - tags.php
+  - Gemfile
+  - Gemfile.lock
 
 plugins:
   - jekyll-paginate
