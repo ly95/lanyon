@@ -1,7 +1,7 @@
 title:               "凡人牧白's Blog"
 tagline:             'Personal Blog'
 description:         "凡人牧白's Blog"
-url:                 http://ly95.me
+url:                 https://ly95.me
 baseurl:             '/'
 permalink:           /:year-:month-:day/:slug.html
 
